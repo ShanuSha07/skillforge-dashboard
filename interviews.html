@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interviews - SkillForge</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>SkillForge</h2>
+
+<ul>
+    <li>
+        <a href="index.html">
+            <i class="fa-solid fa-chart-line"></i>
+            Dashboard
+        </a>
+    </li>
+
+    <li>
+        <a href="jobs.html">
+            <i class="fa-solid fa-briefcase"></i>
+            Jobs
+        </a>
+    </li>
+
+    <li>
+        <a href="skills.html">
+            <i class="fa-solid fa-code"></i>
+            Skills
+        </a>
+    </li>
+
+    <li>
+        <a href="interviews.html">
+            <i class="fa-solid fa-user-tie"></i>
+            Interviews
+        </a>
+    </li>
+
+    <li>
+        <a href="certificates.html">
+            <i class="fa-solid fa-certificate"></i>
+            Certificates
+        </a>
+    </li>
+</ul>
+    </aside>
+
+    <main class="main-content">
+
+        <h1>Interview Tracker</h1>
+
+        <form id="interviewForm">
+
+            <input
+                type="text"
+                id="company"
+                placeholder="Company Name"
+                required
+            >
+
+            <input
+                type="date"
+                id="date"
+                required
+            >
+
+            <select id="round">
+                <option>HR</option>
+                <option>Technical</option>
+                <option>Managerial</option>
+            </select>
+
+            <select id="status">
+                <option>Scheduled</option>
+                <option>Cleared</option>
+                <option>Rejected</option>
+            </select>
+
+            <button type="submit">
+                Add Interview
+            </button>
+
+        </form>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Company</th>
+                    <th>Date</th>
+                    <th>Round</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="interviewBody"></tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="interviews.js"></script>
+
+</body>
+</html>

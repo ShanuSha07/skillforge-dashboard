@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates - SkillForge</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <aside class="sidebar">
+
+        <h2>SkillForge</h2>
+
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="jobs.html"><i class="fa-solid fa-briefcase"></i> Jobs</a></li>
+            <li><a href="skills.html"><i class="fa-solid fa-code"></i> Skills</a></li>
+            <li><a href="interviews.html"><i class="fa-solid fa-user-tie"></i> Interviews</a></li>
+            <li><a href="certificates.html"><i class="fa-solid fa-certificate"></i> Certificates</a></li>
+        </ul>
+
+    </aside>
+
+    <main class="main-content">
+
+        <h1>Certificate Tracker</h1>
+
+        <form id="certificateForm">
+
+            <input
+                type="text"
+                id="certificateName"
+                placeholder="Certificate Name"
+                required
+            >
+
+            <input
+                type="text"
+                id="provider"
+                placeholder="Provider"
+                required
+            >
+
+            <input
+                type="date"
+                id="completionDate"
+                required
+            >
+
+            <input
+                type="url"
+                id="certificateUrl"
+                placeholder="Certificate URL"
+            >
+
+            <button type="submit">
+                Add Certificate
+            </button>
+
+        </form>
+
+        <table>
+
+            <thead>
+                <tr>
+                    <th>Certificate</th>
+                    <th>Provider</th>
+                    <th>Date</th>
+                    <th>Link</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="certificateBody"></tbody>
+
+        </table>
+
+    </main>
+
+</div>
+
+<script src="certificates.js"></script>
+
+</body>
+</html>
