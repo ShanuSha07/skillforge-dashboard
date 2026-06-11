@@ -62,24 +62,6 @@ SkillForge is a responsive career management dashboard built using HTML, CSS, an
 * Local Storage API
 * Font Awesome
 
-## Project Structure
-
-SkillForge/
-│
-├── index.html
-├── jobs.html
-├── skills.html
-├── interviews.html
-├── certificates.html
-│
-├── style.css
-│
-├── dashboard.js
-├── jobs.js
-├── skills.js
-├── interviews.js
-└── certificates.js
-
 ## Learning Outcomes
 
 * CRUD Operations
